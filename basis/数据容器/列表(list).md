@@ -173,7 +173,7 @@ print("去除重复记录后的列表:",new_list)
 ```python
 num_list = []
 for i in range(1,21):
-	num_List.append(i**2)
+	num_list.append(i**2)
 
 print(num_list)
 ```
