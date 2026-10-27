@@ -1,3 +1,10 @@
+---
+tags:
+  - Python
+  - Python/流程控制
+  - Python/模式匹配
+---
+
 ```python
 day = input("请输入星期几(1-9):")  
   

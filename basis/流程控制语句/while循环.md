@@ -1,3 +1,10 @@
+---
+tags:
+  - Python
+  - Python/流程控制
+  - Python/循环
+---
+
 ```python
 i=0
 while i<10:

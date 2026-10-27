@@ -1,3 +1,10 @@
+---
+tags:
+  - Python
+  - Python/流程控制
+  - Python/循环
+---
+
 1.==**break和只能够出现在循环中,表示结束,或跳出当前循环**==
 *break跳出循环时,while后面的else中的代码不会执行*
 2.continue执行时循环回到开头

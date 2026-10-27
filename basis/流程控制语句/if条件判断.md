@@ -1,3 +1,10 @@
+---
+tags:
+  - Python
+  - Python/流程控制
+  - Python/条件判断
+---
+
 ```python
 point = 405  
 if point > 400:  
