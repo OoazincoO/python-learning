@@ -96,7 +96,7 @@ num_list = []
 
 #2.将用户输入的10个数字存入列表
 for i in range(10):
-	num = int(intput("请输入一个有效的数字:"))
+	num = int(input("请输入一个有效的数字:"))
 	num_list.append(num)
 
 print("数字列表:",num_list)
