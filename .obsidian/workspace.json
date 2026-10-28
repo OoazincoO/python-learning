@@ -11,10 +11,14 @@
             "id": "88f27c6a9dd97534",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "text.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "text"
             }
           }
         ]
@@ -95,6 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "text.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,6 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "text.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -155,6 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "text.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -184,6 +191,8 @@
   },
   "active": "88f27c6a9dd97534",
   "lastOpenFiles": [
+    "basis/快捷键.md",
+    "text.md",
     "2026-10-28.md",
     "未命名.canvas",
     "未命名 1.canvas",
