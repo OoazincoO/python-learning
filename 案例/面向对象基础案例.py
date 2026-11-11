@@ -26,7 +26,7 @@ class Student :
         self.english=english
 
     def __str__(self):
-        return f"姓名:{self.name}|语文:{self.chinese}|数学:{self.math}英语:{self.english}|总分:{self.chinese+self.math+self.english}"
+        return f"姓名:{self.name}|语文:{self.chinese}|数学:{self.math}|英语:{self.english}|总分:{self.chinese+self.math+self.english}"
 
     #修改学生成绩
     def update_score(self,chinese=None,math=None,english=None):
@@ -89,18 +89,14 @@ class EduManagement:
     def update_student(self):
         name = input("请输入要修改的学生姓名:")
         for s in self.student_list:
-            if s.name != name:
-                print("学生不在系统内,请重新输入")
-                return
-
-            else:
+            if s.name == name:
                 print(f"当前成绩:{s}")
                 change_subjects = input("请输入要修改的科目(仅一门):")
                 match change_subjects:
                     case "语文":
                         chinese = int(input("请输入学生语文的成绩:"))
                         if 0<= chinese <= 100:
-                            s.update_score(chinese)
+                            s.update_score(chinese=chinese)
                             print("成绩修改成功!")
                             print(f"修改后的成绩:{s}")
                             return
@@ -109,7 +105,7 @@ class EduManagement:
                     case "数学":
                         math = int(input("请输入学生数学的成绩:"))
                         if 0<= math <= 100:
-                            s.update_score(math)
+                            s.update_score(math=math)
                             print("成绩修改成功!")
                             print(f"修改后的成绩:{s}")
                             return
@@ -118,7 +114,7 @@ class EduManagement:
                     case "英语":
                         english = int(input("请输入学生英语的成绩:"))
                         if 0<= english <= 100:
-                            s.update_score(english)
+                            s.update_score(english=english)
                             print("成绩修改成功!")
                             print(f"修改后的成绩:{s}")
                             return
@@ -126,6 +122,9 @@ class EduManagement:
                             return
                     case _:
                         print("请正确输入科目")
+            else:
+                print("学生不在系统内,请重新输入")
+                return
 
 
     #删除学生成绩
@@ -142,7 +141,7 @@ class EduManagement:
 
     #查询指定学生成绩
     def query_student(self):
-        name = input("亲输入要查询的学生姓名:")
+        name = input("请输入要查询的学生姓名:")
 
         for s in self.student_list:
             if s.name == name:
