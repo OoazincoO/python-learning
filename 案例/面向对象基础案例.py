@@ -122,9 +122,7 @@ class EduManagement:
                             return
                     case _:
                         print("请正确输入科目")
-            else:
-                print("学生不在系统内,请重新输入")
-                return
+        print("学生不在系统内,请重新输入")
 
 
     #删除学生成绩
